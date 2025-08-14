@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# CodeSage - C Code Analyser WebApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **real-time C code analyser** with syntax and semantic error detection, accessible directly from your browser.  
+Powered by a C-based backend for high performance and a modern React web interface for ease of use.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
+- **Code Editor in Browser** – Write and test your C programs directly online.  
+- **Syntax Analysis** – Detects missing semicolons, unbalanced brackets, etc.  
+- **Semantic Analysis** – Finds undeclared variables, type mismatches, and logical issues.  
+- **Real-time Error Display** – Highlights exact lines and errors.  
+- **Cross-platform** – Runs on any device with a browser.  
+- **Fast & Lightweight** – Backend written in pure C for speed.  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Frontend**
+- React.js  
+- CodeMirror / Monaco Editor for code editing  
+- Axios for API calls  
 
-### `npm test`
+**Backend**
+- C (Core analyser logic)  
+- Flask (Python API wrapper to run C analyser)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Rashi0903/c-code-analyzer.git
+cd c-code-analyzer
+```
+### 2️⃣ Backend Setup (C + Flask)
+```bash
+cd backend
+make                       # Build the C analyser
+pip install flask
+python app.py              # Start Flask API
+Backend will start at: http://localhost:5000
+```
+### 3️⃣ Frontend Setup (React)
+```bash
+cd frontend
+npm install
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+📌 Usage
 
-### `npm run eject`
+Open the webapp in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Type or paste your C program in the editor.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Click "Analyse" button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Errors will be displayed in real-time with line numbers and details.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
