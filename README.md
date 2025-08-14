@@ -43,7 +43,7 @@ cd backend
 make                       # Build the C analyser
 pip install flask
 python app.py              # Start Flask API
-Backend will start at: http://localhost:5000
+
 ```
 ### 3️⃣ Frontend Setup (React)
 ```bash
